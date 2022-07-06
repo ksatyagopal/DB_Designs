@@ -82,7 +82,7 @@ Create table UserAddresses(
 -- Orders & Cart Related Tables
 
 Create table Cart(
-	Id int IDENTITY(1,1),
+	Id int IDENTITY(1,1) primary key,
 	UserID int FOREIGN KEY REFERENCES Users(UserID),
 	ProductID int FOREIGN KEY REFERENCES Products(ProductID),
 	ProductName nvarchar(MAX),
